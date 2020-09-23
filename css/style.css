@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+}
+
+body{
+
+  background-color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.container{
+max-width: 100%;
+margin: 0 auto;
+background-color: white;
+}
+
+/* Header section */
+
+.logo{
+  width: 25%;
+  padding-top: 15px;
+  margin-left: 2%;
+}
+
+header{
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+img{
+  width: 70%;
+  object-fit: cover;
+}
+
+/* navigatie section */
+
+nav{
+  display: flex;
+  width: 95%;
+}
+
+ul{
+  width: 75%;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 25%;
+  margin: 0 0 0 0;
+  text-align: right;
+  font-size: 18px;
+}
+
+li{
+  display: flex;
+  width: 25%;
+  list-style-type: none;
+
+}
+
+a{
+  color: rgb(115,115,115);
+  font-weight: bold;
+}
+
+a:hover{
+  text-decoration: none;
+  color: rgb(135,6,6);
+}
+
+/* Main Section */
+
+main{
+  width: 100%;
+  background-color: rgb(115,115,115);
+  color: white;
+  padding: 5%;
+}
+
+p{
+  padding-top: 25px;
+
+}
+
+.text{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Features Section */
+#features {
+  padding: 7% 15%;
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#branches{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+}
+
+h3{
+  flex-wrap: wrap;
+  text-align: center;
+  padding-left: 3%;
+}
+
+.branch-icon{
+  background-color: rgb(115,115,115);
+  color: white;
+  margin-left: 3%;
+}
+
+.icon {
+  color: rgb(180,180,180);
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: rgb(135,6,6);
+}
+
+/* Footer Section */
+
+footer{
+  background-color: white;
+  color: rgb(115,115,115);
+}
+
+h4{
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+hr{
+background-color: rgb(115,115,115);
+height: 1px;
+width: 23%;
+margin: 0 auto;
+margin-bottom: 10px;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color: rgb(115,115,115);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.testimonial-image {
+  width: 100%;
+  border-radius: 1%;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+  background-color: rgb(115,115,115);
+  color: #fff;
+}
+
+/* call to action */
+
+.btn{
+  padding: 5px 0;
+  margin: 0 auto;
+  width: 40%;
+}
+
+/* Media Selectors */
+
+@media screen and (min-width: 1144px) and (max-width: 1400px){
+
+  #branches{
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  .btn{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1143px) {
+
+  #branches{
+    width: 60%;
+    flex-flow: column;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  ul{
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+  li{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn{
+    width: 100%;
+  }
+
+  h3{
+    width: 100%;
+  }
+
+}
