@@ -175,8 +175,9 @@ margin-bottom: 10px;
 /* call to action */
 
 .btn{
-  padding: 5px 0;
+  padding: 10px 0;
   margin: 0 auto;
+  margin-top: 40px;
   width: 40%;
 }
 
