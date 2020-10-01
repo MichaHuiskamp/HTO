@@ -8,7 +8,7 @@ body{
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-.container{
+#container{
 max-width: 100%;
 margin: 0 auto;
 background-color: white;
@@ -29,7 +29,7 @@ header{
 
 img{
   width: 70%;
-  object-fit: cover;
+
 }
 
 /* navigatie section */
@@ -81,7 +81,7 @@ p{
 }
 
 .text{
-  width: 60%;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }
@@ -105,6 +105,7 @@ p{
 }
 
 h3{
+  width: 100%;
   flex-wrap: wrap;
   text-align: center;
   padding-left: 3%;
@@ -123,6 +124,11 @@ h3{
 
 .icon:hover {
   color: rgb(135,6,6);
+}
+
+.portret{
+  width: 12%;
+  border-radius: 2%;
 }
 
 /* Footer Section */
@@ -181,6 +187,15 @@ margin-bottom: 10px;
   width: 40%;
 }
 
+.info{
+  text-align: left;
+  list-style-type: none;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
 /* Media Selectors */
 
 @media screen and (min-width: 1144px) and (max-width: 1400px){
@@ -193,13 +208,9 @@ margin-bottom: 10px;
   img{
     width: 100%;
   }
-
-  .btn{
-    width: 100%;
-  }
 }
 
-@media screen and (max-width: 1143px) {
+@media screen and (min-width: 660px) and (max-width: 1143px) {
 
   #branches{
     width: 60%;
@@ -222,11 +233,32 @@ margin-bottom: 10px;
   }
 
   .btn{
-    width: 100%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  #branches{
+    width: 60%;
+    flex-flow: column;
   }
 
-  h3{
-    width: 100%;
+  img{
+    width: 200%;
   }
 
+  ul{
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+  li{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn{
+    width: 60%;
+  }
 }
